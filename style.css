@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* Navigation */
+nav {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Home */
+#home {
+    background: white;
+    max-width: none;
+    padding: 140px 20px;
+}
+
+#home h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #00bcd4;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+#home p {
+    max-width: 600px;
+    margin: 20px auto 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00bcd4;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 6px;
+}
+
+/* Services */
+#services {
+    background: #f5f7fa;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: white;
+    padding: 30px 25px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+/* Pricing */
+#pricing {
+    background: white;
+}
+
+#pricing .service {
+    border: 1px solid #ddd;
+}
+
+#pricing .service h2 {
+    color: #00bcd4;
+}
+
+/* Contact */
+#contact {
+    background: #f5f7fa;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #home h2 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 320px;
+    }
+}
