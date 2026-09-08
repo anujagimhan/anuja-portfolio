@@ -18,7 +18,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 nav a {
@@ -26,11 +25,34 @@ nav a {
     text-decoration: none;
     margin: 0 18px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 nav a:hover {
     color: #00bcd4;
+}
+
+/* Home */
+#home {
+    background: linear-gradient(135deg, #ffffff, #eafcff);
+    text-align: center;
+    padding: 140px 20px;
+}
+
+#home h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #00bcd4;
+    font-size: 32px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 20px auto 30px;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 /* Sections */
@@ -41,39 +63,9 @@ section {
     text-align: center;
 }
 
-/* Home */
-#home {
-    background: linear-gradient(135deg, #ffffff, #eefcff);
-    max-width: none;
-    padding: 160px 20px;
-}
-
-#home h1 {
-    font-size: 60px;
-    margin-bottom: 10px;
-}
-
-#home h2 {
-    color: #00bcd4;
-    font-size: 34px;
-    margin-top: 0;
-}
-
-#home p {
-    max-width: 650px;
-    margin: 20px auto 35px;
-    font-size: 19px;
-    line-height: 1.7;
-}
-
-/* Headings */
-h2 {
-    font-size: 38px;
-    margin-bottom: 30px;
-}
-
-h3 {
-    font-size: 23px;
+section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
 }
 
 p {
@@ -91,94 +83,54 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
 button:hover {
     background: #00bcd4;
-    transform: translateY(-2px);
 }
 
-/* Skills */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    display: inline-block;
-    background: #111827;
-    color: white;
-    padding: 13px 22px;
-    margin: 8px;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-li:hover {
-    background: #00bcd4;
-    transform: translateY(-3px);
-}
-
-/* Services & Projects */
-#services {
-    background: #f5f7fa;
-}
-
-#projects {
+/* Menu Cards */
+#menu {
     background: white;
 }
 
-.services {
+.cards {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }
 
-.service {
-    background: white;
-    padding: 32px 25px;
+.card {
+    background: #f9fafb;
     width: 280px;
+    padding: 30px 25px;
     border-radius: 14px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
 }
 
-.service:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-}
-
-.service h3 {
-    margin-top: 0;
-}
-
-/* Pricing */
-#pricing {
-    background: white;
-}
-
-#pricing .service {
-    border: 1px solid #e5e7eb;
-}
-
-#pricing .service h2 {
+.card h3:last-child {
     color: #00bcd4;
-    font-size: 34px;
+    font-size: 26px;
+}
+
+/* About */
+#about {
+    background: #f5f7fa;
 }
 
 /* Contact */
 #contact {
-    background: #f5f7fa;
+    background: #111827;
+    color: white;
+}
+
+#contact h2 {
+    color: white;
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-
-    nav {
-        padding: 15px 10px;
-    }
 
     nav a {
         display: inline-block;
@@ -186,7 +138,7 @@ li:hover {
     }
 
     #home {
-        padding: 110px 15px;
+        padding: 100px 15px;
     }
 
     #home h1 {
@@ -194,18 +146,14 @@ li:hover {
     }
 
     #home h2 {
-        font-size: 27px;
+        font-size: 26px;
     }
 
     section {
         padding: 65px 15px;
     }
 
-    h2 {
-        font-size: 32px;
-    }
-
-    .service {
+    .card {
         width: 100%;
         max-width: 330px;
     }
