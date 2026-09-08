@@ -12,19 +12,21 @@ body {
 
 /* Navigation */
 nav {
-    background: #222;
+    background: #111827;
     padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 18px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -33,45 +35,45 @@ nav a:hover {
 
 /* Sections */
 section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
-    padding: 80px 20px;
+    padding: 90px 20px;
     text-align: center;
 }
 
 /* Home */
 #home {
-    background: white;
+    background: linear-gradient(135deg, #ffffff, #eefcff);
     max-width: none;
-    padding: 140px 20px;
+    padding: 160px 20px;
 }
 
 #home h1 {
-    font-size: 55px;
+    font-size: 60px;
     margin-bottom: 10px;
 }
 
 #home h2 {
     color: #00bcd4;
-    font-size: 32px;
+    font-size: 34px;
     margin-top: 0;
 }
 
 #home p {
-    max-width: 600px;
-    margin: 20px auto 30px;
-    font-size: 18px;
-    line-height: 1.6;
+    max-width: 650px;
+    margin: 20px auto 35px;
+    font-size: 19px;
+    line-height: 1.7;
 }
 
 /* Headings */
 h2 {
-    font-size: 36px;
-    margin-bottom: 25px;
+    font-size: 38px;
+    margin-bottom: 30px;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 23px;
 }
 
 p {
@@ -81,18 +83,20 @@ p {
 
 /* Buttons */
 button {
-    background: #222;
+    background: #111827;
     color: white;
     border: none;
     padding: 14px 30px;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #00bcd4;
+    transform: translateY(-2px);
 }
 
 /* Skills */
@@ -103,16 +107,26 @@ ul {
 
 li {
     display: inline-block;
-    background: #222;
+    background: #111827;
     color: white;
-    padding: 12px 20px;
+    padding: 13px 22px;
     margin: 8px;
-    border-radius: 6px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-/* Services */
+li:hover {
+    background: #00bcd4;
+    transform: translateY(-3px);
+}
+
+/* Services & Projects */
 #services {
     background: #f5f7fa;
+}
+
+#projects {
+    background: white;
 }
 
 .services {
@@ -124,10 +138,16 @@ li {
 
 .service {
     background: white;
-    padding: 30px 25px;
-    width: 250px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 32px 25px;
+    width: 280px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .service h3 {
@@ -140,11 +160,12 @@ li {
 }
 
 #pricing .service {
-    border: 1px solid #ddd;
+    border: 1px solid #e5e7eb;
 }
 
 #pricing .service h2 {
     color: #00bcd4;
+    font-size: 34px;
 }
 
 /* Contact */
@@ -155,25 +176,37 @@ li {
 /* Mobile */
 @media (max-width: 600px) {
 
+    nav {
+        padding: 15px 10px;
+    }
+
     nav a {
         display: inline-block;
-        margin: 8px;
+        margin: 7px;
+    }
+
+    #home {
+        padding: 110px 15px;
     }
 
     #home h1 {
-        font-size: 38px;
+        font-size: 40px;
     }
 
     #home h2 {
-        font-size: 26px;
+        font-size: 27px;
     }
 
     section {
-        padding: 60px 15px;
+        padding: 65px 15px;
+    }
+
+    h2 {
+        font-size: 32px;
     }
 
     .service {
         width: 100%;
-        max-width: 320px;
+        max-width: 330px;
     }
 }
