@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+nav {
+    background: #111827;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+#home {
+    background: linear-gradient(135deg, #ffffff, #eafcff);
+    text-align: center;
+    padding: 140px 20px;
+}
+
+#home h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #00bcd4;
+    font-size: 32px;
+}
+
+#home p {
+    max-width: 650px;
+    margin: 20px auto 30px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00bcd4;
+}
+
+#menu {
+    background: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f9fafb;
+    width: 280px;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card h3:last-child {
+    color: #00bcd4;
+    font-size: 26px;
+}
+
+#about {
+    background: #f5f7fa;
+}
+
+#contact {
+    background: #111827;
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #home {
+        padding: 100px 15px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home h2 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 65px 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 330px;
+    }
+}
